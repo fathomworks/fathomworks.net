@@ -1,4 +1,4 @@
-fathomworks.net
+fathomworks
 ===============
 
-The website
+[The website](http://www.fathomworks.net)
