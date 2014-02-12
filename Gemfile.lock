@@ -2,7 +2,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.3.5)
+    execjs (2.0.2)
     hike (1.2.3)
+    json (1.8.1)
     multi_json (1.8.4)
     puma (2.6.0)
       rack (>= 1.1, < 2.0)
@@ -29,6 +31,9 @@ GEM
       sprockets (~> 2.0)
       tilt (~> 1.1)
     tilt (1.4.1)
+    uglifier (2.4.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
 
 PLATFORMS
   ruby
@@ -41,3 +46,4 @@ DEPENDENCIES
   shotgun
   sinatra
   sprockets-sass
+  uglifier

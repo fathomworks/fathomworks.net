@@ -21,5 +21,5 @@ group :assets do
 
   # Javascript
   #gem 'coffee-script'
-  #gem 'uglifier'
+  gem 'uglifier'
 end
