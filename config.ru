@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler'
-Bundler.require(:default, :assets, ENV['RACK_ENV'])
+Bundler.require(:default, ENV['RACK_ENV'])
 
 use Rack::CanonicalHost, ENV['CANONICAL_HOST'] if ENV['CANONICAL_HOST']
 
