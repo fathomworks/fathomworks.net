@@ -10,13 +10,8 @@ map '/assets' do
   sprockets.append_path 'assets/javascripts'
   sprockets.append_path 'assets/stylesheets'
   sprockets.append_path 'assets/images'
-  sprockets.context_class.class_eval do
-    def asset_path(path, options = {})
-      path
-    end
-  end
   run sprockets
 end
 
-require './main'
-run Sinatra::Application
+require './fathomworks'
+run FathomWorks
