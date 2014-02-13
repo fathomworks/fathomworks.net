@@ -45,5 +45,6 @@ DEPENDENCIES
   sass
   shotgun
   sinatra
+  sprockets
   sprockets-sass
   uglifier
