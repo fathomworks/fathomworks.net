@@ -12,7 +12,11 @@ gem 'puma'
 # Make sure correct host
 gem 'rack-canonical-host'
 
+# Utilities
 gem 'rake'
+
+# Markup
+gem 'haml'
 
 # Stylesheet
 gem 'sprockets'

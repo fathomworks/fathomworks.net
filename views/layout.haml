@@ -1,0 +1,37 @@
+!!!
+%html
+  %head
+    %meta{ :charset =>     "utf-8" }
+    %meta{ :viewport =>    "width=device-width, initial-scale=1, maximum-scale=1" }
+    %meta{ :description => "FathomWorks does native iOS and Ruby on Rails development, and is available for work." }
+
+    %link{ :rel=>   "stylesheet",
+           :href => "/assets/application.css",
+           :type => "text/css" }
+
+    %link{ :rel => "shortcut icon",
+           :href=> "/assets/favicon.ico" }
+
+    %title fathomworks llc | iOS and Ruby on Rails Development
+
+  %body
+    = yield
+
+    %footer
+      = "&copy; #{Time.now.year} fathomworks llc"
+
+    %script{ :src => "/assets/srcset.min.js" }
+
+    = if ENV['RACK_ENV'] == 'production'
+      :javascript
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36125961-1']);
+          _gaq.push(['_setDomainName', 'fathomworks.net']);
+          _gaq.push(['_setAllowLinker', true]);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();

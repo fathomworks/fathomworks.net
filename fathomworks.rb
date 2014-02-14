@@ -1,6 +1,6 @@
 class FathomWorks < Sinatra::Base
   get '/' do
-    erb :home
+    haml :home
   end
 end
 
