@@ -1,13 +1,11 @@
 @import "globals/variables";
 @import "components/reset";
 
-@import "pages/*";
-
 body {
-  background-color: #4A90E2;
+  background-color: $dark-blue-color;
   color: #ffffff;
   text-align: center;
-  font: 83%/1.4 helvetica neue, helvetica, arial, sans-serif;
+  font: 83%/1.4 $font-medium;
   line-height: 170%;
   font-weight: 200;
 }
