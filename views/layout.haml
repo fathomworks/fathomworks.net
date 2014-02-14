@@ -22,7 +22,7 @@
 
     %script{ :src => "/assets/srcset.min.js" }
 
-    = if ENV['RACK_ENV'] == 'production'
+    - if ENV['RACK_ENV'] == 'production'
       :javascript
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-36125961-1']);
